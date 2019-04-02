@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    container_name: tech-doc-translator
+    env_file: .env
+    build:
+      context: .
+    volumes:
+      - ./:/work
